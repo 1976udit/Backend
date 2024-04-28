@@ -1,0 +1,22 @@
+{
+  "name": "first_back",
+  "version": "1.0.0",
+  "description": "basic app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Backend"
+  },
+  "keywords": [
+    "first",
+    "backend"
+  ],
+  "author": "Udit Tyagi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
