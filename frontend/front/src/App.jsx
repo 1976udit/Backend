@@ -5,27 +5,28 @@ import './App.css'
 import axios from 'axios'
 
 function App() {
-  const [data , setData] = useState([])
+  const [entries , setEntries] = useState([])
 
   useEffect(()=>{
-    axios.get('https://fictional-winner-976xv7q699jx2xgvj-5000.app.github.dev/list')
-    .then((response) => {setData(response.data)})
+    axios.get('/api/list')
+    .then((response) => {setEntries(response.data)})
     .catch((error) => {
       console.log(error)
     })
   })
+  // console.log(entries)
 
   return (
     <>
     <h1>Welcome</h1>
-    <h2>Number of entries : {data.length}</h2>
-    {
+    <h2>Number of entries : {entries.length}</h2>
+    {/* {
       data.map((entry) => {
            <div key={entry.id}>
                <p>Name : {entry.name} and Branch : {entry.branch}</p>
            </div>
       })
-    }
+    } */}
     </>
   )
 }
