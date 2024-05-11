@@ -8,7 +8,7 @@ function App() {
   const [entries , setEntries] = useState([])
 
   useEffect(()=>{
-    axios.get('/api/list')
+     axios.get('/api/list')
     .then((response) => {setEntries(response.data)})
     .catch((error) => {
       console.log(error)

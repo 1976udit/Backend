@@ -1,12 +1,9 @@
 import express from 'express';
-import cors from 'cors'
+import cors from 'cors';
 
 const app = express()
 const port = process.env.PORT || 5000;
-app.use(cors({
-    origin:'https://congenial-trout-69vp69rvg9rgh5jx5-5173.app.github.dev',
-    methods:['GET','POST']
-}));
+app.use(cors());
 // const data = {
 //     "login": "1976udit",
 //     "id": 165473837,
